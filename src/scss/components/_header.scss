@@ -1,14 +1,29 @@
 .header {
     &__content {
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
+        .wrapper {
+            display: flex;
+            align-items: center;  
+            height: 100%;  
+        }
         &_top {
             background-color: #2e2c28;
             color: #fff;
             height: 40px;
             font-size: .8125rem;
+            position: relative;
         }
+        &_middle {
+            position: relative;
+            background: #fff;
+            height: 100px;
+        }
+    }
+    //top
+    &__lang {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     &__links {
         padding: 0 20px;
@@ -17,9 +32,23 @@
     }
     &__soc {
         margin-left: auto;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    //middle
+    &__logo {
+        width: 180px;
+        height: 53px;
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
+//elemets-top
 .city {
     margin-left: 10px;
     display: flex;
@@ -52,7 +81,7 @@
     transition: 0.3s ease;
     i {
         color: #e4c283;
-        margin-left: 10px;
+        margin-left: 30px;
         margin-right: 6px;
     }
     p {
@@ -72,7 +101,7 @@
     transition: 0.3s ease;
     i {
         color: #e4c283;
-        margin-left: 10px;
+        margin-left: 30px;
         margin-right: 6px;
     }
     p {
@@ -100,3 +129,4 @@
         }
     }
 }
+//elemets-top-end
