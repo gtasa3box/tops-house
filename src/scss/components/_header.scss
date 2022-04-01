@@ -46,6 +46,9 @@
         top: 50%;
         transform: translateY(-50%);
     }
+    &__nav {
+        flex-basis: 1;
+    }
 }
 
 //elemets-top
