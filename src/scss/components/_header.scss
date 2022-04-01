@@ -48,7 +48,44 @@
     }
     &__nav {
         flex-basis: 1;
+        margin-right: 20px;
+        width: 100%;
     }
+    &__search {
+        
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 20px;
+        a {
+            align-items: center;
+            color: #2e2c28;
+            display: inline-flex;
+            font-size: 18px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            white-space: nowrap;
+            i {
+                color: #a0cf11;
+                font-size: 1.375rem;
+                margin-right: 5px;
+            }
+        }
+        p {
+            color: #756f63;
+            font-size: .75rem;
+            line-height: 20px;
+            line-height: 1.25rem;
+            text-align: right;
+        }
+    }
+    &__btn {
+
+    }
+
 }
 
 //elemets-top

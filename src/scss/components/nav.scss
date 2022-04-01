@@ -1,8 +1,18 @@
 .nav {
     display: flex;
-    width: 100%;
-    width: 885px;
+    max-width: 100%;
     justify-content: space-between;
+    align-items: center;
+    &__title {
+        color:#6c6963;
+        color: #000!important;
+        font-size: 14px!important;
+        position: relative;
+        font-weight: 400;
+        padding: 0.5rem 0.875rem;
+        text-align: inherit;
+        white-space: nowrap;
+    }
     &__elem {
         position: relative;
         color:#6c6963;
@@ -56,6 +66,12 @@
         align-items: center;
         i {
             color: #000;
+            transition: 0.3s ease;
+        }
+        &.active {
+            i {
+                transform: rotate(180deg);
+            }
         }
     }
     &__drop-drop {
